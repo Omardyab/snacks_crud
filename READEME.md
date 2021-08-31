@@ -17,5 +17,7 @@
 all from here: https://www.toptal.com/developers/gitignore/api/django
 5-poetry shell
 6-git init
-6-git add .
+7-git add .
+8-git remote add origin git@github.com:Omardyab/snacks_crud.git
+9-git push -u origin master
 6-django-admin startproject django_snacks .
