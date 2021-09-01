@@ -1,4 +1,3 @@
-
 # snacks_crud
 
 PR:https://github.com/Omardyab/snacks_crud/pull/2
@@ -22,6 +21,10 @@ PR:https://github.com/Omardyab/snacks_crud/pull/2
     6-git init
     7-git add .
     git commit -m "first commit"
-    8-git remote add origin
+    8-git remote add origin sshurl
     9-git push -u origin master
-    6-django-admin startproject django_snacks .
+    6-django-admin startproject django_snacks . //check poetry shell is activated
+    python manage.py migrate
+    python manage.py runserver 
+    now your app would show "The install worked successfully! Congratulations!" 
+    python manage.py startapp snacks_crud
