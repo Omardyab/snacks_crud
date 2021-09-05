@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # add you app here
+    'snack'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +56,11 @@ ROOT_URLCONF = 'snacks_crud.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # wire up your template
+        # 'DIRS': [f'{BASE_DIR}/templates'], <= another way
+        'DIRS': [
+            BASE_DIR/ 'templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

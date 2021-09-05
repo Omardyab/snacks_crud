@@ -20,3 +20,30 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+from django.views.generic import  ListView, DetailView, CreateView, UpdateView, DeleteView
+
+# Create your views here.
+# from .models import 
+# from django.urls import reverse_lazy
+
+# class ListView(ListView):
+#     template_name = '_list.html'
+#     model= 
+
+# class DetailView(DetailView):
+#     template_name= '_detail.html'
+#     model= 
+# class CreateView(CreateView):
+#     template_name= '_create.html'
+#     model= 
+#     fields = ['title', 'purchaser', 'description']
+
+# class UpdateView(UpdateView):
+#     template_name= '_update.html'
+#     model= 
+#     fields = ['title', 'purchaser', 'description']
+# class DeleteView(DeleteView):
+#     template_name= '_delete.html'
+#     model= 
+#     success_url = reverse_lazy('_list')
