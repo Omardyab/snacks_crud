@@ -29,3 +29,4 @@ PR:https://github.com/Omardyab/snacks_crud/pull/2
     now your app would show "The install worked successfully! Congratulations!" 
     python manage.py startapp snacks_crud
     python manage.py createsuperuser
+    
