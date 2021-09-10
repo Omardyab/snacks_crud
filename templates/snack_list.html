@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>hello and welcome to our store, here are your greate lists</p>
+<a href="{% url 'snack_create' %}">Add New Snack</a>
+<div class='flex flex-row''>
+<ul class='flex-initial '>
+  {% for snack in object_list %}
+  <li>
+    <a href="{% url 'snack_detail' snack.pk %}">{{ snack.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+</div>
+
+{% endblock content %}

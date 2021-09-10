@@ -1,0 +1,26 @@
+from django.views.generic import  ListView, DetailView, CreateView, UpdateView, DeleteView
+
+# Create your views here.
+from .models import $1
+from django.urls import reverse_lazy
+
+class $1ListView(ListView):
+    template_name = '$2_list.html'
+    model= $1
+
+class $1DetailView(DetailView):
+    template_name= '$2_detail.html'
+    model= $1
+class $1CreateView(CreateView):
+    template_name= '$2_create.html'
+    model= $1
+    fields = ['title', 'purchaser', 'description']
+
+class $1UpdateView(UpdateView):
+    template_name= '$2_update.html'
+    model= $1
+    fields = ['title', 'purchaser', 'description']
+class $1DeleteView(DeleteView):
+    template_name= '$2_delete.html'
+    model= $1
+    success_url = reverse_lazy('$3_list')
